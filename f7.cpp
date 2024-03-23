@@ -1,3 +1,12 @@
+/*
+* FILE : f7.cpp
+* PROJECT : SENG1000 - Focused Assignment #7
+* PROGRAMMER : Ayushkumar Bhupatbhai Rakholiya
+* FIRST VERSION : 2024-03-19
+* DESCRIPTION :
+*   This program give you practice at creating text and binary files.
+*/
+
 #include <stdio.h>
 
 const unsigned short KBinaryData[11] = { 26946, 24942, 31090, 25632, 29793, 8289, 28518, 8306, 28537, 33141, 39308 };
