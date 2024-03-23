@@ -13,3 +13,20 @@ int main() {
 	}
 	fprintf(textFile, "This is line 1.\nThis is line 2.\n");
 	fclose(textFile);
+	//Creating and writing to binary file
+	FILE* binaryFile = fopen("myEvenDatalist.data", "wb");
+	if (binaryFile == NULL) {
+		printf("Error opening binary file for writing.\n");
+		return 1;
+
+		// Loop through the array and write only even numbers
+		for (int i = 0; 1 < sizeof(KBinaryData) / sizeof(KBinaryData[0]); i++) {
+			if (KBinaryData[i] % 2 == 0) { // only fwrite (SkBinaryData[i],
+				fwrite(&KBinaryData[i], sizeof(unsigned short), 1, binaryFile);
+				printf("%p", &KBinaryData[i]);
+			}
+		}
+		fclose(binaryFile);
+		return 0;
+	}
+}
